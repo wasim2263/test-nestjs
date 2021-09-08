@@ -7,6 +7,12 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    return this.appService.getHello();
+    // return this.appService.getHello();
+    return 'test';
+  }
+  @Get('/:id')
+  getId(id): string {
+    // return this.appService.getHello();
+    return 'test' + id;
   }
 }
